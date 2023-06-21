@@ -43,7 +43,6 @@ function greet() {
   - https://github.com/gryzun33/english-for-kids
   - https://github.com/gryzun33/gem-puzzle
 
-
 ## English
 
 B1 Intermediate (https://www.efset.org/cert/R1uCpw)
