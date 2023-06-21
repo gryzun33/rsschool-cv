@@ -35,3 +35,15 @@ function greet() {
    - learn.javascript.ru
    - w3schools.com
    - RS School JavaScript/Front-end course 2020 Q3 ([certificate](https://app.rs.school/certificate/r56htpdu))
+
+ ## Experience 
+
+* Сoding tests (codewars.com, w3schools.com)
+* Projects from courses
+  - https://github.com/gryzun33/english-for-kids
+  - https://github.com/gryzun33/gem-puzzle
+
+
+## English
+
+B1 Intermediate (https://www.efset.org/cert/R1uCpw)
