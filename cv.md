@@ -23,3 +23,15 @@ function greet() {
   return "Hello world!";
 }
 ```
+## Education
+
+* Belarusian Nationed Technical University,     
+    
+  Power Engineering Faculty, 2005-2010, diploma with honour
+
+* In programming:
+   - self-education
+   - Udemy online-courses
+   - learn.javascript.ru
+   - w3schools.com
+   - RS School JavaScript/Front-end course 2020 Q3 ([certificate](https://app.rs.school/certificate/r56htpdu))
