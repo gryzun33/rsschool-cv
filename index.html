@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<title>CV Olga Yakusheva</title>
@@ -11,31 +14,40 @@
 <body>
 	<header>
 		<div class="overheader"></div>
-		<div class="title">
-			<div class="photo"><img src="/assets/photo_2023-06-27 12.39.52.jpeg" alt="my photo" width="250" height="250"></div>
-			<h1 class="title-name">Olga<br>Yakusheva</h1>
+		<div class="header-box">
+			<div class="header-photo">
+        <img src="/assets/photo_2023-06-27 12.39.52.jpeg" alt="my photo" 
+        width="250" height="250">
+      </div>
+      <div class="title-about">
+        <h1 class="title">Olga<br>Yakusheva</h1>
+        <div class="about">
+          <h2>About myself</h2>
+          <p>My goal is of course to become a successful front-end developer. Now I am on maternity 
+            leave with two children and I am ready to make every effort. My strengths are 
+            conscientiousness, sociability, highly organized.</p>
+        </div>
+      </div>			
 		</div>		
 	</header>
 	<main>
-		<div class="contacts">
-			<ul>
-				<li><img src="" alt=""><span>Minsk, Belarus</span></li>
-				<li><img src="" alt=""><span>+375(29)789-32-74</span></li>
-				<li><img src="" alt=""><span>Olga Yakusheva +375297893274</span></li>
-				<li><img src="" alt=""><span>yakushevao777@gmail.com</span></li>
-				<li><img src="" alt=""><span>gryzun33</span></li>
-				<li><img src="" alt=""><span>yakushevaolga</span></li>
-			</ul>
-		</div>
-		<div class="info">
-			<div class="info-about">
-				<h2>About myself</h2>
-				<p>My goal is of course to become a successful front-end developer. Now I am on maternity 
-					leave with two children and I am ready to make every effort. My strengths are 
-					conscientiousness, sociability, highly organized.</p>
-			</div>
-			<div class="info-skills">
-				<h2>Skills</h2>
+    <div class="info-aside">
+
+      <section class="contacts">
+        <h2>Contacts</h2>
+        <ul>
+          <li><img src="assets/icon-location.png" alt="location" width="15" height="15"><span>Minsk, Belarus</span></li>
+          <li><img src="assets/icon-phone.png" alt="phone" width="15" height="15"><span>+375(29)789-32-74</span></li>
+          <li><img src="assets/icon-telegram.png" alt="telegram" width="15" height="15"><span>Olga Yakusheva +375297893274</span></li>
+          <li><img src="assets/icon-mail.png" alt="mail" width="15" height="15"><span>yakushevao777@gmail.com</span></li>
+          <li><img src="assets/icon-github.png" alt="github" width="15" height="15"><span>gryzun33</span></li>
+          <li><img src="assets/icon-discord.png" alt="discord" width="15" height="15"><span>yakushevaolga</span></li>
+        </ul>
+      </section>
+
+      <section class="skills">
+
+        <h2>Skills</h2>
 				<ul>
 					<li>JavaScript</li>
 					<li>HTML/CSS</li>
@@ -43,6 +55,14 @@
 					<li>Git, Github</li>
 					<li>VSCode</li>
 				</ul>
+
+      </section>
+
+    </div>
+	
+		<div class="info">
+			<div class="info-skills">
+				
 			</div>
 			<div class="info-education">
 				<h2>Education</h2>
@@ -74,8 +94,22 @@
 					</li>
 				</ul>
 			</div>
-			<div class="info-english"></div>
-			<div class="info-code"></div>
+			<div class="info-english">
+        <h2>English</h2>
+        <p>B1 Intermediate (<a href="https://www.efset.org/cert/R1uCpw">https://www.efset.org/cert/R1uCpw</a>)</p>
+      </div>
+			<div class="info-code">
+        <h2>Code example</h2>
+        <pre>
+          <code>
+function greet() {
+  return "Hello world!";
+}
+          </code>
+        </pre>
+      
+
+      </div>
 		</div>
 	</main>
 	<footer>

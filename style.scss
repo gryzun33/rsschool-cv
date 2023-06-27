@@ -1,55 +1,109 @@
-
+$color-bg-yellow: #f1d72a;
+$color-bg-brown: #24231f;
+$color-text-light:#ffffff;
 
 * {
   margin: 0; 
   padding: 0;
 	box-sizing: border-box;
+  font-family: 'Roboto';
 }
+
+
 
 body {
   width: 800px;
   margin: 0 auto;
 }
 
-.overheader {
-  width: 250px;
-  height: 50px; 
-  background-color:#f1d72a;
-  margin-top: 30px;
-  margin-left: 40px;
+header {
+
+  .overheader {
+    width: 250px;
+    height: 50px; 
+    background-color:#f1d72a;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+
+  .header-box {
+    display: flex;
+    background-color: $color-bg-brown;
+    padding-left: 40px;
+    color: $color-text-light;
+
+
+    .header-photo {
+      width: 250px;
+      height: 250px;
+      z-index: 1;
+    }
+    
+    .title-about {
+      padding: 20px 40px;
+
+      .title {
+        font: 40px 'Arial';
+      }
+
+      .about {
+        margin-top: 20px;
+      }
+      
+    }
+  }
+
 }
 
-.title {
-  display: flex;
-  background-color: rgb(36, 34, 30);
-  padding-left: 40px;
-}
-
-.photo {
-  width: 250px;
-  height: 250px;
-  background-color: aqua;
-  z-index: 1;
-}
-
-.title-name {
-  font: 40px Arial;
-  color: white;
-  padding-left: 30px;
-  align-self: center;
-}
 
 main {
   padding-left: 40px;
   display: flex;
+
+  .info-aside {
+    width: 250px;
+    background-color: #f1d72a;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    .contacts {
+
+      // ul {
+      //   margin-top: 10px;
+      // }
+
+      li {
+        list-style-type: none;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        span {
+          margin-left: 10px;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+      
+    }
+
+    .skills {
+      margin-top: 20px;
+      
+      li {
+        margin-left: 20px;
+      }
+    }
+  }
+
+ 
+  
+
+  .info {
+    width: 510px;
+    padding: 20px;
+  }
 }
 
-.contacts {
-  width: 250px;
-  background-color: #f1d72a;
-}
 
-.info {
-  width: 510px;
-  padding: 20px;
-}
