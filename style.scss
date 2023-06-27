@@ -1,7 +1,9 @@
+
+
 * {
-  margin: 0;
+  margin: 0; 
   padding: 0;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -11,8 +13,8 @@ body {
 
 .overheader {
   width: 250px;
-  height: 50px;
-  background-color: #f1d72a;
+  height: 50px; 
+  background-color:#f1d72a;
   margin-top: 30px;
   margin-left: 40px;
 }
@@ -50,4 +52,4 @@ main {
 .info {
   width: 510px;
   padding: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
