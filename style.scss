@@ -7,7 +7,6 @@ $color-bg-light-gray: #F5F5F5;
   margin: 0; 
   padding: 0;
 	box-sizing: border-box;
-  // font-family: 'Roboto';
 }
 
 html {
@@ -38,7 +37,6 @@ body {
   width: 800px;
   margin: 0 auto;
   background-color: $color-text-light;
-  // border: 1px solid $color-bg-brown;
 }
 
 header {
@@ -48,7 +46,6 @@ header {
     width: 250px;
     height: 50px; 
     background-color:#f1d72a;
-    // margin-top: 30px;
     margin-left: 40px;
   }
 
@@ -57,7 +54,6 @@ header {
     background-color: $color-bg-brown;
     padding-left: 40px;
     color: $color-text-light;
-
 
     .header-photo {
       width: 250px;
@@ -77,20 +73,15 @@ header {
 
         p {
           margin-top: 5px;
-        }
-        
-      }
-      
+        }        
+      }      
     }
   }
-
 }
-
 
 main {
   padding-left: 40px;
   display: flex;
-  // margin-bottom: 30px;
 
   .info-aside {
     width: 250px;
@@ -116,8 +107,7 @@ main {
           font-weight: 300;
           font-size: 14px;
         }
-      }
-      
+      }      
     }
 
     .skills {
@@ -134,9 +124,6 @@ main {
     }
   }
 
- 
-  
-
   .info {
     width: 510px;
     padding: 20px 40px;
@@ -146,14 +133,11 @@ main {
     }
 
     .education li li {
-
-      margin-left: 20px;
-      
+      margin-left: 20px;      
     }
 
     .experience {
       
-
       h2 {
         margin-top: 20px;
       }
@@ -172,8 +156,6 @@ main {
       p {
         font-weight: 300;
       }
-
-
     }
 
     .info-code {
@@ -191,8 +173,8 @@ main {
 footer {
   margin-left: 40px;
   display: flex;
+  padding-bottom: 20px;
   
-
   .footer-aside {
     background-color: $color-bg-yellow;
     width: 250px;

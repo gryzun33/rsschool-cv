@@ -134,6 +134,7 @@ main .info .info-code pre {
 footer {
   margin-left: 40px;
   display: flex;
+  padding-bottom: 20px;
 }
 footer .footer-aside {
   background-color: #f1d72a;
