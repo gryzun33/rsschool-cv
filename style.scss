@@ -1,28 +1,54 @@
 $color-bg-yellow: #f1d72a;
 $color-bg-brown: #24231f;
 $color-text-light:#ffffff;
+$color-bg-light-gray: #F5F5F5;
 
 * {
   margin: 0; 
   padding: 0;
 	box-sizing: border-box;
+  // font-family: 'Roboto';
+}
+
+html {
+  background-color: $color-bg-light-gray;
+}
+
+a {
+  color: $color-bg-brown;
+}
+
+h1, h2, p, li {
   font-family: 'Roboto';
 }
 
+p, li {
+  font-size: 14px;
+}
 
+li {
+  font-weight: 300;
+}
+
+h2 {
+  font-weight: 400;
+}
 
 body {
   width: 800px;
   margin: 0 auto;
+  background-color: $color-text-light;
+  // border: 1px solid $color-bg-brown;
 }
 
 header {
-
+  padding-top: 30px;
+   
   .overheader {
     width: 250px;
     height: 50px; 
     background-color:#f1d72a;
-    margin-top: 30px;
+    // margin-top: 30px;
     margin-left: 40px;
   }
 
@@ -48,6 +74,11 @@ header {
 
       .about {
         margin-top: 20px;
+
+        p {
+          margin-top: 5px;
+        }
+        
       }
       
     }
@@ -59,6 +90,7 @@ header {
 main {
   padding-left: 40px;
   display: flex;
+  // margin-bottom: 30px;
 
   .info-aside {
     width: 250px;
@@ -68,9 +100,9 @@ main {
 
     .contacts {
 
-      // ul {
-      //   margin-top: 10px;
-      // }
+      h2 {
+        margin-left: 20px;
+      }
 
       li {
         list-style-type: none;
@@ -90,9 +122,14 @@ main {
 
     .skills {
       margin-top: 20px;
+
+      h2 {
+        margin-left: 20px;
+      }
       
       li {
         margin-left: 20px;
+        font-weight: 300;
       }
     }
   }
@@ -102,7 +139,72 @@ main {
 
   .info {
     width: 510px;
-    padding: 20px;
+    padding: 20px 40px;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    .education li li {
+
+      margin-left: 20px;
+      
+    }
+
+    .experience {
+      
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      li {
+        margin-left: 20px;
+      }
+      
+    
+    }
+
+    .info-english {
+      h2 {
+        margin-top: 20px;
+      }
+      p {
+        font-weight: 300;
+      }
+
+
+    }
+
+    .info-code {
+      h2 {
+        margin-top: 20px;
+      }
+
+      pre {
+        background-color: 	#F5F5F5;
+      }
+    }
+  }
+}
+
+footer {
+  margin-left: 40px;
+  display: flex;
+  
+
+  .footer-aside {
+    background-color: $color-bg-yellow;
+    width: 250px;
+  }
+
+  .footer-nav {
+    display: flex;
+    width: 510px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
