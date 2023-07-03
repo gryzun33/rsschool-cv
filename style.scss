@@ -2,6 +2,19 @@ $color-bg-yellow: #f1d72a;
 $color-bg-brown: #24231f;
 $color-text-light:#ffffff;
 $color-bg-light-gray: #F5F5F5;
+$color-bg-gray: #DCDCDC;
+
+@mixin h2-bg {
+  background-color: $color-bg-gray;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+@mixin yellow-marker {
+  margin-left: 20px;
+  color: $color-bg-yellow;
+  list-style-type: disc;
+}
 
 * {
   margin: 0; 
@@ -17,12 +30,16 @@ a {
   color: $color-bg-brown;
 }
 
-h1, h2, p, li {
-  font-family: 'Roboto';
+h2, p, li {
+  font-family: 'Belanosima', sans-serif;
+}
+
+h1 {
+  font-family: 'Belanosima', sans-serif;
 }
 
 p, li {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 li {
@@ -65,7 +82,7 @@ header {
       padding: 20px 40px;
 
       .title {
-        font: 40px 'Arial';
+        font-size: 40px;
       }
 
       .about {
@@ -97,7 +114,6 @@ main {
 
       li {
         list-style-type: none;
-        font-size: 16px;
         display: flex;
         align-items: center;
         margin-top: 5px;
@@ -132,18 +148,28 @@ main {
       margin-bottom: 5px;
     }
 
+    .education h2 {
+      @include h2-bg();
+    }
+
     .education li li {
-      margin-left: 20px;      
+      @include yellow-marker();
+      
+      span {
+        color:$color-bg-brown;
+      }
     }
 
     .experience {
       
       h2 {
         margin-top: 20px;
+        @include h2-bg();
       }
 
-      li {
-        margin-left: 20px;
+      li li {
+        @include yellow-marker();
+        
       }
       
     
@@ -152,6 +178,7 @@ main {
     .info-english {
       h2 {
         margin-top: 20px;
+        @include h2-bg();
       }
       p {
         font-weight: 300;
@@ -161,6 +188,7 @@ main {
     .info-code {
       h2 {
         margin-top: 20px;
+        @include h2-bg();
       }
 
       pre {

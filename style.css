@@ -12,12 +12,16 @@ a {
   color: #24231f;
 }
 
-h1, h2, p, li {
-  font-family: "Roboto";
+h2, p, li {
+  font-family: "Belanosima", sans-serif;
+}
+
+h1 {
+  font-family: "Belanosima", sans-serif;
 }
 
 p, li {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 li {
@@ -58,7 +62,7 @@ header .header-box .title-about {
   padding: 20px 40px;
 }
 header .header-box .title-about .title {
-  font: 40px "Arial";
+  font-size: 40px;
 }
 header .header-box .title-about .about {
   margin-top: 20px;
@@ -82,7 +86,6 @@ main .info-aside .contacts h2 {
 }
 main .info-aside .contacts li {
   list-style-type: none;
-  font-size: 16px;
   display: flex;
   align-items: center;
   margin-top: 5px;
@@ -109,23 +112,44 @@ main .info {
 main .info h2 {
   margin-bottom: 5px;
 }
+main .info .education h2 {
+  background-color: #DCDCDC;
+  display: inline-block;
+  border-radius: 5px;
+}
 main .info .education li li {
   margin-left: 20px;
+  color: #f1d72a;
+  list-style-type: disc;
+}
+main .info .education li li span {
+  color: #24231f;
 }
 main .info .experience h2 {
   margin-top: 20px;
+  background-color: #DCDCDC;
+  display: inline-block;
+  border-radius: 5px;
 }
-main .info .experience li {
+main .info .experience li li {
   margin-left: 20px;
+  color: #f1d72a;
+  list-style-type: disc;
 }
 main .info .info-english h2 {
   margin-top: 20px;
+  background-color: #DCDCDC;
+  display: inline-block;
+  border-radius: 5px;
 }
 main .info .info-english p {
   font-weight: 300;
 }
 main .info .info-code h2 {
   margin-top: 20px;
+  background-color: #DCDCDC;
+  display: inline-block;
+  border-radius: 5px;
 }
 main .info .info-code pre {
   background-color: #F5F5F5;
