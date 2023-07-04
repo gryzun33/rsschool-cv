@@ -160,10 +160,7 @@ main {
 
       li li {
         @include yellow-marker();
-
-      }
-      
-    
+      }    
     }
 
     .info-english {
@@ -200,12 +197,9 @@ footer {
   }
 
   .footer-nav {
-    // display: flex;
     width: 510px;
     padding-left: 20px;
-    padding-right: 20px;
-    // justify-content: space-between;
-    // align-items: center;
+    padding-right: 20px; 
 
     ul {
       display: flex;
@@ -215,9 +209,6 @@ footer {
       li {
         list-style-type: none;
       }
-
     }
   }
 }
-
-
