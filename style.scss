@@ -22,8 +22,14 @@ $color-bg-gray: #DCDCDC;
   list-style-type: disc;
 }
 
-html {
+body {
   background-color: $color-bg-light-gray;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: $color-text-light;
 }
 
 a {
@@ -36,12 +42,6 @@ h1, h2, p, li {
 
 p, li {
   font-size: 16px;
-}
-
-body {
-  width: 800px;
-  margin: 0 auto;
-  background-color: $color-text-light;
 }
 
 header {
@@ -61,7 +61,7 @@ header {
     color: $color-text-light;
 
     .header-photo {
-      width: 250px;
+      min-width: 250px;
       height: 250px;
       z-index: 1;
     }
@@ -187,7 +187,7 @@ main {
 }
 
 footer {
-  margin-left: 40px;
+  padding-left: 40px;
   display: flex;
   padding-bottom: 20px;
   

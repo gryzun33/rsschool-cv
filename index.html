@@ -7,16 +7,15 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<title>CV Olga Yakusheva</title>
 </head>
 <body>
-	<header>
+	<header class="wrapper">
 		<div class="overheader"></div>
 		<div class="header-box">
 			<div class="header-photo">
-				<img src="/assets/photo_2023-06-27.jpeg" alt="my photo" width="250" height="250">
+				<img src="assets/photo_2023-06-27.jpeg" alt="my photo" width="250" height="250">
 			</div>
 			<div class="title-about">
 				<h1 class="title">Olga<br><span>Yakusheva</span></h1>
@@ -29,19 +28,35 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class="wrapper">
 		<div class="info-aside">
 			<section class="contacts">
 				<h2>Contacts</h2>
 				<ul>
-					<li><img src="assets/icon-location.png" alt="location" width="20" height="20"><span>Minsk, Belarus</span></li>
-					<li><img src="assets/icon-phone.png" alt="phone" width="20" height="20"><span>+375(29)789-32-74</span></li>
-					<li><img src="assets/icon-telegram.png" alt="telegram" width="20" height="20"><span>Olga Yakusheva
-							+375297893274</span></li>
-					<li><img src="assets/icon-mail.png" alt="mail" width="20" height="20"><span>yakushevao777@gmail.com</span>
+					<li>
+						<img src="assets/icon-location.png" alt="location" width="20" height="20">
+						<span>Minsk, Belarus</span>
 					</li>
-					<li><img src="assets/icon-github.png" alt="github" width="20" height="20"><span>gryzun33</span></li>
-					<li><img src="assets/icon-discord.png" alt="discord" width="20" height="20"><span>yakushevaolga</span></li>
+					<li>
+						<img src="assets/icon-phone.png" alt="phone" width="20" height="20">
+						<span>+375(29)789-32-74</span>
+					</li>
+					<li>
+						<img src="assets/icon-telegram.png" alt="telegram" width="20" height="20">
+						<span>Olga Yakusheva +375297893274</span>
+					</li>
+					<li>
+						<img src="assets/icon-mail.png" alt="mail" width="20" height="20">
+						<span>yakushevao777@gmail.com</span>
+					</li>
+					<li>
+						<img src="assets/icon-github.png" alt="github" width="20" height="20">
+						<span>gryzun33</span>
+					</li>
+					<li>
+						<img src="assets/icon-discord.png" alt="discord" width="20" height="20">
+						<span>yakushevaolga</span>
+					</li>
 				</ul>
 			</section>
 			<section class="skills">
@@ -79,9 +94,15 @@
 					<li>Coding tests (codewars.com, w3schools.com)</li>
 					<li>Projects from courses
 						<ul>
-							<li><a href="https://rolling-scopes-school.github.io/gryzun33-JS2020Q3/shelter/pages/main/main.html">Shelter</a></li>
-							<li><a href="https://gryzun33-english-for-kids.netlify.app/">English for kids</a></li>
-							<li><a href="https://rolling-scopes-school.github.io/gryzun33-JS2020Q3/gem-puzzle/">Gem-puzzle</a></li>
+							<li>
+								<a href="https://rolling-scopes-school.github.io/gryzun33-JS2020Q3/shelter/pages/main/main.html">Shelter</a>
+							</li>
+							<li>
+								<a href="https://gryzun33-english-for-kids.netlify.app/">English for kids</a>
+							</li>
+							<li>
+								<a href="https://rolling-scopes-school.github.io/gryzun33-JS2020Q3/gem-puzzle/">Gem-puzzle</a>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -102,13 +123,21 @@ function even_or_odd(number) {
 			</section>
 		</div>
 	</main>
-	<footer class="footer">
+	<footer class="footer wrapper">
 		<div class="footer-aside"></div>
 		<nav class="footer-nav">
 			<ul>
 				<li>&#169;2023</li>
-				<li><a href="https://github.com/gryzun33"><img src="assets/icon-github.png" alt="github" width="35"></a></li>
-				<li><a href="https://rs.school/js/"><img src="assets/rs_school_js.svg" alt="rsschool" width="100"></a></li>
+				<li>
+					<a href="https://github.com/gryzun33">
+						<img src="assets/icon-github.png" alt="github" width="35">
+					</a>
+				</li>
+				<li>
+					<a href="https://rs.school/js/">
+						<img src="assets/rs_school_js.svg" alt="rsschool" width="100">
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</footer>
