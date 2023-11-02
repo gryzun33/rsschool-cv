@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #F5F5F5;
   display: flex;
@@ -37,6 +41,30 @@ p, li {
 
 header {
   padding-top: 30px;
+}
+header .overheader-wrapper {
+  display: flex;
+}
+header .overheader-wrapper .navigation {
+  display: flex;
+  align-items: center;
+  width: 530px;
+}
+header .overheader-wrapper .navigation ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+header .overheader-wrapper .navigation li {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+header .overheader-wrapper .navigation li:hover {
+  background-color: #f1d72a;
+}
+header .overheader-wrapper .navigation li a {
+  text-decoration: none;
 }
 header .overheader {
   width: 250px;
