@@ -1,0 +1,272 @@
+$color-bg-yellow: #f1d72a;
+$color-bg-brown: #24231f;
+$color-text-light:#ffffff;
+$color-bg-light-gray: #F5F5F5;
+$color-bg-gray: #DCDCDC;
+
+* {
+  margin: 0; 
+  padding: 0;
+	box-sizing: border-box;
+}
+
+@mixin h2-bg {
+  background-color: $color-bg-gray;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+@mixin yellow-marker {
+  margin-left: 20px;
+  color: $color-bg-yellow;
+  list-style-type: disc;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+  
+body {
+  background-color: $color-bg-light-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.container {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  width: 820px;
+  background-color: $color-text-light;
+}
+
+a {
+  color: $color-bg-brown;
+}
+
+h1, h2, p, li {
+  font-family: 'Belanosima', sans-serif;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+header {
+  padding-top: 30px;
+
+  .overheader-wrapper {
+    display: flex;
+
+    .navigation {
+
+      display: flex;
+      align-items: center;
+      width: 530px;
+
+      ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        
+      }
+
+      li {
+        list-style-type: none;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #f1d72a;
+        }
+        
+        a {
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+   
+  .overheader {
+    width: 250px;
+    height: 50px; 
+    background-color:#f1d72a;
+    margin-left: 40px;
+  }
+
+  .header-box {
+    display: flex;
+    background-color: $color-bg-brown;
+    padding-left: 40px;
+    color: $color-text-light;
+
+    .header-photo {
+      min-width: 250px;
+      height: 250px;
+      z-index: 1;
+    }
+    
+    .title-about {
+      padding: 20px 40px;
+
+      .title {
+        font-size: 40px;
+        
+        span {
+          color: $color-bg-yellow;
+        }
+      }
+
+      .about {
+        margin-top: 20px;
+
+        p {
+          margin-top: 5px;
+        }        
+      }      
+    }
+  }
+}
+
+main {
+  padding-left: 40px;
+  display: flex;
+
+  .info-aside {
+    width: 250px;
+    background-color: #f1d72a;
+    padding-left: 20px;
+    padding-top: 20px;
+
+    .contacts {
+
+      h2 {
+        margin-left: 20px;
+      }
+
+     
+
+      li {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 10px;
+            font-size: 14px;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }         
+      }      
+    }
+
+    .skills {
+      margin-top: 20px;
+
+      h2 {
+        margin-left: 20px;
+      }
+      
+      li {
+        margin-left: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .info {
+    width: 530px;
+    padding: 20px 40px;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    .education h2 {
+      @include h2-bg();
+    }
+
+    .education li li {
+      @include yellow-marker();
+      
+      span {
+        color:$color-bg-brown;
+      }
+    }
+
+    .experience {
+      
+      h2 {
+        margin-top: 20px;
+        @include h2-bg();
+      }
+
+      li li {
+        @include yellow-marker();
+      }    
+    }
+
+    .info-english {
+      h2 {
+        margin-top: 20px;
+        @include h2-bg();
+      }
+      p {
+        font-weight: 300;
+      }
+    }
+
+    .info-code {
+      h2 {
+        margin-top: 20px;
+        @include h2-bg();
+      }
+
+      pre {
+        background-color: 	#F5F5F5;
+      }
+    }
+  }
+}
+
+footer {
+  padding-left: 40px;
+  display: flex;
+  padding-bottom: 20px;
+  
+  .footer-aside {
+    background-color: $color-bg-yellow;
+    width: 250px;
+  }
+
+  .footer-nav {
+    width: 510px;
+    padding-left: 20px;
+    padding-right: 20px; 
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
